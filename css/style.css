@@ -229,17 +229,34 @@ img {
 }
 
 /* =====================
-   ABOUT / STATS
+   ABOUT
 ===================== */
+.section-header {
+  text-align: center;
+}
+
+.about-desc {
+  font-weight: 300;
+  font-size: 14px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+.about-cta {
+  font-weight: 300;
+  font-size: 14px;
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .stat-item {
-  background: #14141c;
   padding: 30px;
   border-radius: 16px;
   text-align: center;
@@ -251,8 +268,8 @@ img {
 }
 
 .stat-item h3 {
-  font-size: 32px;
-  color: #8a4fff;
+  font-size: 48px;
+  color: rgba(0, 255, 136, 1);
 }
 
 /* =====================
@@ -295,15 +312,19 @@ img {
 }
 
 .episode-card {
-  background: #14141c;
-  padding: 20px;
+  background: rgba(53, 17, 101, 0.4);
+  /* padding: 20px; */
   border-radius: 18px;
+}
+
+.episode-card h3 {
+  font-size: 24px;
 }
 
 .episode-card iframe {
   width: 100%;
   height: 180px;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
   margin-bottom: 15px;
 }
 
@@ -474,13 +495,22 @@ img {
   }
 
   .features,
-  .episode-cards,
-  .stats {
+  .episode-cards{
     grid-template-columns: 1fr;
   }
 
-  .host-wrapper {
-    grid-template-columns: 1fr;
+  /* about */
+   .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stat-item {
+    padding: 20px;
+  }
+
+  .stat-item h3 {
+    font-size: 36px;
   }
 
   /* host */
