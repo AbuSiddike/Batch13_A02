@@ -421,25 +421,46 @@ img {
 
 .episode-card {
   background: rgba(53, 17, 101, 0.4);
-  /* padding: 20px; */
   border-radius: 18px;
-}
-
-.episode-card h3 {
-  font-size: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .episode-card iframe {
   width: 100%;
   height: 180px;
-  border-radius: 12px 12px 0 0;
+  border: none;
+  display: block;
+}
+
+.episode-card-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.episode-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.episode-card p {
+  font-size: 16px;
+  font-weight: 300;
   margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.episode-card span {
+  color: #2dff9a;
 }
 
 .duration {
-  display: inline-block;
-  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: #8a4fff;
+  font-weight: 500;
 }
 
 /* =====================
